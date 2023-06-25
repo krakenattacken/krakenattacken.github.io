@@ -1,0 +1,40 @@
+html, body {
+    font-family: 'Belanosima', sans-serif;
+    height: 100%;
+    font-size: 20px;
+}
+
+.cover {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.container {
+    padding: 1em 1em;
+    margin: 1em auto;
+}
+
+.container-fluid {
+    margin: 0px;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(var(--column-count), 1fr);
+}
+.card {
+    box-shadow: 5px 5px rgb(110, 110, 110);
+}
+
+@media (width > 720) {
+    .grid { --column-count: 3}
+}
+
+.section-title {
+    padding: .5em 0;
+}
+
+#bg-colour {
+    background-color: antiquewhite;
+}

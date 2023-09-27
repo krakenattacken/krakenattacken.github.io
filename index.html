@@ -3,103 +3,134 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Allison Jang's Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Laurence Jang</title>
     <!-- add fonts -->
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">  
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-        <a class="navbar-brand" href="#">allison jang</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        <div class="collapse navbar-collapse" id="navbarContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/krakenattacken" target="_blank">github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="www.linkedin.com/in/allison-jang" target="_blank">linkedin</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="container cover">
-            <h1 class="text-center">Hi, I'm Allison!</h1>        
-            <p class="text-center">I'm a second year computer science student at UTSC.<br> I like comics, internet deep-dives, and bad puns. Here's some of my work.</p>     
-        </div>
-    </div>
-    <div class="container-fluid">
+    <header class="primary-header">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="grid">
-                <div class="card">
-                    <!--insert photos-->
-                    <div class="card-body">
-                        <h3>Excel Web Tools</h3>
-                        <p>CNIB Foundation</p>
-                        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#excelWeb">read more</button> 
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h3>Personal Website</h3>
-                        <p>krakenattacken.github.io</p>
-                        <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#personalSite">read more</button>                     
-                    </div>
-                </div>
+            <div class="nav-wrap">
+                <a class="name-style fs-subheading" href="#">laurence jang</a>
+                <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+                    <img class="icon-burger" src="images/icon-burger.svg">
+                    <img class="icon-close" src="images/icon-close.svg">
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="primary-nav" id="primary-nav">
+                    <ul role="list" class="nav-list">
+                        <li><a href="#">projects</a></li>
+                        <li><a href="#">about me</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-    </div>
-    <!--modals-->
-    <div class="modal fade" id="excelWeb" tabindex="-1" role="dialog" aria-labelledby="excelWebReadMore" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="excelWebReadMore">Excel Web Tools</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                <div class="modal-body">
-                    Form autofiller built with Python and Selenium for use in Google Chrome. Used for
-                    semi-automation of shipping requests for CNIB's Phone-It-Forward program.
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="personalSite" tabindex="-1" role="dialog" aria-labelledby="excelWebReadMore" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="excelWebReadMore">Excel Web Tools</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                <div class="modal-body">
-                    Personal portfolio (what you're looking at now!) built with Twitter Bootstrap framework. <br>
-                    View source code on <a href="https://github.com/krakenattacken/krakenattacken.github.io" target="_blank">github.</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    </header>
 
-    <footer style="font-size: 16px;" class="text-center">Made with &#x2764;. &#xA9; 2023 by krakenattacken (Allison Jang)</footer>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <main>
+        <div class="container padding-block-med">
+            <div class="even-columns">
+                <div class="flow">
+                    <h1 class="fs-primary-heading fw-semibold">Hi, I'm Laurence!</h1>
+                    <p>I'm a second year computer science student at UTSC.</p>
+                    <button class="button-accent">contact</button>
+                </div>
+                <div class="img-profile">
+                    <img src="images/tester.png" alt="pixel profile picture">
+                </div>
+            </div>
+        </div>
+
+        <div class="container padding-block-med">
+            <div class="flow">
+                <div class="nav-wrap">
+                    <h2 class="fs-primary-heading name-style">projects</h2>
+                    <button class="button-accent">view all -></button>
+                </div>
+                <div class="grid">
+                    <section>
+                        <img src="">
+                        <div class="description flow" style="--flow-spacer: 1em">
+                            <h3 class="fs-subheading">Excel Web Tools</h3>
+                            <button class="button-accent">read more -></button>
+                        </div>
+                    </section>
+                    <section>
+                        <img src="">
+                        <div class="description flow" style="--flow-spacer: 1em">
+                            <h3 class="fs-subheading">Portfolio Site</h3>
+                            <p>What you're looking at now.</p>
+                            <a src="https://github.com/krakenattacken/krakenattacken.github.io" target="_blank" rel="noopener noreferrer">
+                                <button class="button-accent">source code</button>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="container padding-block-med">
+            <div class="flow">
+                <h2 class="fs-primary-heading name-style">about me</h2>
+                <div class="even-columns">
+                    <div class="flow" style="--flow-spacer: 1em">
+                        <p>Hi, I'm Laurence!</p>
+                        <p>I'm a second year student at University of Toronto Scarborough, majoring in computer science and city studies.</p>
+                        <button class="button-accent">read more -></button>
+                    </div>
+                    <div>
+                        <img src="images/tester.png" alt="pixel profile picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container padding-block-med">
+            <div class="flow">
+                <h2 class="name-style fs-primary-heading">contacts</h2>
+                <div class="even-columns">
+                    <div>
+                        <p>Searching for internships for Summer 2024.</p>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container padding-block-med">
+            <div class="even-columns">
+                <div>
+                    <p class="name-style">laurence jang</p>
+                    <ul class="social-list" role="list" aria-label="social links">
+                        <li><a aria-label="github" href="">
+                            <svg class="social-icon">
+                                <use xlink:href="images/social-icons.svg#github"></use>
+                            </svg></a>
+                        </li>
+                        <li><a aria-label="linkedin" href="">
+                            <svg class="social-icon">
+                            <use xlink:href="images/social-icons.svg#linkedin"></use>
+                        </svg></a></li>
+                    </ul>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <p style="text-align: center;">© 2023 Laurence Jang.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>  
 </body>
+
 </html>

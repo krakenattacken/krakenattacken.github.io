@@ -93,9 +93,11 @@ body {
 .button-accent {
   cursor: pointer;
   padding: 0.25rem 1rem;
-  border-color: var(--clr-accent-1);
+  border: var(--clr-accent-1) 2px solid;
   background-color: var(--clr-bg);
   color: var(--clr-neutral);
+  margin-top: 1rem;
+
 }
 
 .button-accent:hover,
@@ -105,6 +107,7 @@ body {
 
 .img-profile {
   align-items: center;
+  vertical-align: middle;
 }
 
 /*navigation*/
@@ -124,6 +127,11 @@ body {
 
 .nav-toggle {
   display: none;
+}
+
+.nav-border {
+  border-bottom: solid var(--clr-neutral) 1px;
+  margin-bottom: -1px;
 }
 
 .nav-list {
@@ -271,6 +279,9 @@ body {
 .padding-block-med {
   padding-block: 2rem;
 }
+.padding-block-sm {
+  padding-block: 1rem;
+}
 
 .container {
     --max-width: 1024px;
@@ -302,7 +313,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   gap: 15px;
   align-items: start;
 }

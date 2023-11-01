@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laurence Jang | about me</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">  
+</head>
+
+<body>
+    <header class="primary-header">
+        <div class="container">
+            <div class="nav-wrap">
+                <a class="name-style fs-subheading" href="#">laurence jang</a>
+                <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+                    <img class="icon-burger" src="images/icon-burger.svg">
+                    <img class="icon-close" src="images/icon-close.svg">
+                    <span class="visually-hidden">Menu</span>
+                </button>
+                <nav class="primary-nav" id="primary-nav">
+                    <ul role="list" class="nav-list">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="works.html">works</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="container padding-block-med">
+            <h1 class="name-style fs-primary-heading">Excel Web Tools</h1>
+            <p class="padding-block-med">
+                Built during my volunteer tenure with the CNIB Phone-It-Forward program, I 
+                built this project with Python and Selenium to make shipping out phones faster.
+            </p>
+
+            <h2 class="name-style fs-subheading">the problem</h2>
+            <p class="padding-block-med">After a phone was wiped by a volunteer, its information went on The Spreadsheet.
+                When a phone was shipped out to a client, its information came from The Spreadsheet.
+                Who has time to waste their day copy and pasting info from Excel and into the blasted
+                shipping form?
+            </p>
+
+            <h2 class="name-style fs-subheading">the purpose</h2>
+            <p class="padding-block-med">
+                Each of the rows on the aformentioned Spreadsheet contained information about one phone.
+                Depending on who donated it (corporation or just a regular person), we had up to 30 columns of 
+                for a single phone. But when shipping out a phone, you only need a couple pieces of information from those 30 columns,
+                and having to side-scroll through the spreadsheet and search for it was quite time-consuming. Our team lead, who managed
+                all the volunteers, was the person mainly responsible for this, and she is not the best with technology.
+            </p>
+
+            <h2 class="name-style fs-subheading"></h2>
+            <p class="padding-block-sm">
+                The company laptops are equipped with Excel, but because none of them have document sharing set up, the browser version of Excel is used instead.
+                
+            </p>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container padding-block-med">
+            <div class="even-columns">
+                <div>
+                    <p class="name-style">laurence jang</p>
+                    <ul class="social-list" role="list" aria-label="social links">
+                        <li><a aria-label="github" href="">
+                            <svg class="social-icon">
+                                <use xlink:href="../images/social-icons.svg#github"></use>
+                            </svg></a>
+                        </li>
+                        <li><a aria-label="linkedin" href="">
+                            <svg class="social-icon">
+                            <use xlink:href="../images/social-icons.svg#linkedin"></use>
+                        </svg></a></li>
+                    </ul>
+                </div>
+                <div>
+
+                </div>
+            </div>
+            <p style="text-align: center;">© 2023 Laurence Jang.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script> 
+</body>
+

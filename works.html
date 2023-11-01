@@ -3,8 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laurence Jang</title>
-    <!-- add fonts -->
+    <title>Laurence Jang | works</title>
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +11,10 @@
 
     <link rel="stylesheet" href="style.css">  
 </head>
+
 <body>
-    <header class="primary-header nav-border">
-        <section class="container">
+    <header class="primary-header">
+        <div class="container">
             <div class="nav-wrap">
                 <a class="name-style fs-subheading" href="#">laurence jang</a>
                 <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
@@ -24,49 +24,32 @@
                 </button>
                 <nav class="primary-nav" id="primary-nav">
                     <ul role="list" class="nav-list">
-                        <li><a href="#">home</a></li>
-                        <li><a href="works.html">works</a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#">works</a></li>
                         <li><a href="about-me.html">about me</a></li>
                         <li><a href="contact.html">contact</a></li>
                     </ul>
                 </nav>
             </div>
-        </section>
+        </div>
     </header>
 
     <main>
         <section class="container padding-block-med">
-            <div class="even-columns">
-                <div class="flow">
-                    <h1 class="fs-primary-heading fw-semibold">Hi, I'm Laurence!</h1>
-                    <p>I'm a second year student at University of Toronto Scarborough, studying computer science,
-                        city studies, and Geographic Information Science. What that really means is having 
-                        a strange affinity for data, libraries, and web-based video games, all three of which you can 
-                        see displayed here.
-                    </p>
-                    <button class="button-accent">contact</button>
-                </div>
-                <div class="img-profile">
-                    <img src="images/tester.png" alt="pixel profile picture">
-                </div>
-            </div>
+            <h1 class="name-style fs-primary-heading">works</h1>
+            <p class="padding-block-med">Here you can find all my projects, past and present, and also my experience.</p>
+            <a href="#experience"><button class="button-accent">jump to experience</button></a>
         </section>
 
-        <section class="container padding-block-med">
-            <div class="flow">
-                <div class="nav-wrap">
-                    <h2 class="fs-primary-heading name-style">projects</h2>
-                    <button class="button-accent">view all -></button>
-                </div>
+        <section class="container">
+            <h2 class="name-style fs-primary-heading">projects</h2>
+            <div class="padding-block-med">
                 <div class="grid">
                     <section>
                         <img src="">
                         <div class="description flow" style="--flow-spacer: 1em">
                             <h3 class="fs-subheading">Excel Web Tools</h3>
-                            <p>Some tools for something more efficient than ctrl-c ctrl-v.</p>
-                            <a href="pages/excel-web-tools.html">
-                                <button class="button-accent">read more -></button>
-                            </a>
+                            <button class="button-accent">read more -></button>
                         </div>
                     </section>
                     <section>
@@ -75,7 +58,7 @@
                             <h3 class="fs-subheading">Portfolio Site</h3>
                             <p>What you're looking at now.</p>
                             <a href="https://github.com/krakenattacken/krakenattacken.github.io" target="_blank" rel="noopener noreferrer">
-                                <button class="button-accent">read more -></button>
+                                <button class="button-accent">source code</button>
                             </a>
                         </div>
                     </section>
@@ -85,7 +68,7 @@
                             <h3 class="fs-subheading"></h3>
                             <p></p>
                             <a href="" target="_blank" rel="noopener noreferrer">
-                                <button class="button-accent">read more -></button>
+                                <button class="button-accent"></button>
                             </a>
                         </div>
                     </section>
@@ -94,46 +77,27 @@
         </section>
 
         <section class="container padding-block-med">
-            <div class="flow">
-                <h2 class="fs-primary-heading name-style">about me</h2>
-                <div class="even-columns">
-                    <div>
-                        <p>
-                            Hi, I'm Laurence!<br/><br/>
-                            I'm a second year student at University of Toronto Scarborough, majoring in computer science and
-                            city studies, with a minor in Geographic Information Science.
-                            
-                        </p>
-                        <a href="about-me.html"><button class="button-accent">read more -></button></a>
-                    </div>
-                    <div>
-                        <img src="images/tester.png" alt="pixel profile picture">
-                    </div>
-                </div>
+            <div class="nav-wrap">
+                <h2 class="name-style fs-primary-heading" id="experience">experience</h2>
+                <a href=""><button class="button-accent">want my resume?</button></a>
             </div>
-        </section>
-
-        <section class="container padding-block-med">
-            <div class="flow">
-                <h2 class="name-style fs-primary-heading">contact me</h2>
-                    <div>
-                        <p>Reach out if you're looking for a dev (looking for internships for Summer 2024!), have
-                            a question, or just want to chat.</p>
-                            <a href=""><button class="button-accent">contact!</button></a>
-
-                    </div>
-                </div>
-            </div>
+            <section class="padding-block-sm">
+                <h3 class="name-style fs-subheading">professional</h3>
+            </section>
+            <section class="padding-block-sm">
+                <h3 class="name-style fs-subheading">volunteer</h3>
+                
+            </section>
         </section>
     </main>
 
     <footer class="footer">
-        <section class="container padding-block-med">
+        <div class="container padding-block-med">
             <div class="even-columns">
                 <div>
                     <p class="name-style">laurence jang</p>
                     <ul class="social-list" role="list" aria-label="social links">
-                        <li><a aria-label="github" href="https://github.com/krakenattacken" target="_blank" rel="noopener noreferrer">
+                        <li><a aria-label="github" href="">
                             <svg class="social-icon">
                                 <use xlink:href="images/social-icons.svg#github"></use>
                             </svg></a>
@@ -149,9 +113,8 @@
                 </div>
             </div>
             <p style="text-align: center;">© 2023 Laurence Jang.</p>
-        </section>
+        </div>
     </footer>
-    <script src="main.js"></script>  
+    <script src="main.js"></script> 
 </body>
 
-</html>
